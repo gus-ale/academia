@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Online - Ciencias Exactas y Programación</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            color: #f1f1f1;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #f4a261;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Contenedor principal */
+        .container {
+            margin-left: 16%; /* Ajuste para el menú lateral */
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+            color: #f1f1f1;
+        }
+        section img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #2a9d8f;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        section p {
+            color: #f4f4f4;
+        }
+
+        /* Menú horizontal */
+        nav {
+            background-color: #0000FF;
+            overflow: hidden;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f1f1f1;
+            padding: 15px 20px;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            background-color: #e76f51;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Menú vertical */
+        .menu-vertical {
+            width: 15%; /* Más angosto */
+            background-color: #1a1a1a;
+            color: #f1f1f1;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.4);
+        }
+        .menu-vertical h3 {
+            text-align: left;
+            color: #f4a261;
+        }
+        .menu-vertical ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-vertical ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+        .menu-vertical ul li a:hover {
+            background-color: #2a9d8f;
+            padding-left: 10px;
+            transition: 0.3s;
+        }
+
+        /* Grid de materias */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #1a1a1a;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            .menu-vertical {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .container {
+                margin-left: 0;
+                padding: 10px;
+            }
+            nav ul {
+                display: block;
+                text-align: left;
+            }
+            nav ul li {
+                display: block;
+                width: 100%;
+            }
+            nav ul li a {
+                display: block;
+                width: 100%;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav ul li a {
+                font-size: 1em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú vertical en el costado izquierdo -->
+    <div class="menu-vertical">
+        <h3>Cursos en Video</h3>
+        <ul>
+            <li><a href="#">Biofísica</a></li>
+            <li><a href="#">Química</a></li>
+            <li><a href="#">Matemática</a></li>
+        </ul>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h2>Escuela Online de Ciencias y Tecnología</h2>
+        <p>Clases online de Química, Biofísica, Matemática, Programación y más.</p>
+        <h1 style = "color : #F8FF00">Whatsapp : (549) 11-76440462</h1>
+        <h2>ARANCELES . CBC : $6000 x hora  - UNIVERSITARIOS : $ 7000 x hora</h2>
+        <h2 style = "color : #F8FF00">PACK 10 HORAS !!! CBC $ 30000 - UNIVERSITARIOS : $ 39000 </h2>
+    </header>
+
+    <!-- Menú horizontal para las materias principales -->
+    <nav>
+        <ul>
+            <li><a href="#">Química</a></li>
+            <li><a href="#">Biofísica</a></li>
+            <li><a href="#">Matemática</a></li>
+            <li><a href="#">Análisis Matem.</a></li>
+            <li><a href="#">Álgebra</a></li>
+            <li><a href="#">Programación</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Contenido principal en formato grid -->
+    <div class="container">
+        <div class="grid">
+            <section>
+                <h2>Química</h2>
+                
+                <p>*Química General e Inorgánica</p>
+                <p>*Química Orgánica</p>
+                <p>*Química Analítica</p>
+                <p>*Fisicoquímica</p>
+                
+                <img src="imquimi.jpg" alt="Química">
+            </section>
+
+            <section>
+                <h2>Biofísica</h2>
+                <p>Descubre la intersección entre la biología y la física, donde estudiarás los principios físicos que subyacen a los sistemas biológicos.</p>
+                <img src="biof.png" alt="Biofísica">
+            </section>
+
+            <section>
+                <h2>Matemática</h2>
+                <p>Domina las bases de las matemáticas con ejercicios prácticos y tutorías personalizadas.</p>
+                <img src="mate.jpg" alt="Matemática">
+            </section>
+
+            <section>
+                <h2>Análisis Matemático</h2>
+                <p>Profundiza en las técnicas de cálculo y análisis, con clases enfocadas en límites , continuidad ,derivadas, integrales y ecuaciones diferenciales.</p>
+                <img src="analisis.png" alt="Análisis Matemático">
+            </section>
+
+            <section>
+                <h2>Álgebra</h2>
+                <p>Desde los conceptos básicos hasta álgebra abstracta, te ayudamos a comprender cómo resolver y entender la materia.</p>
+                <img src="algebra.jpg" alt="Álgebra">
+            </section>
+
+            <section>
+                <h2>Física</h2>
+                <p>Conceptos como cinemática , dinámica , trabajo y energía , dinámica circular , hidrostática ,etc.</p>
+                <img src="fisica.jpg" alt="Física">
+            </section>
+
+            <!-- Nuevos cursos de programación -->
+            <section>
+                <h2>Python</h2>
+                <p>Aprende a programar en Python, uno de los lenguajes más versátiles y populares en el mundo del desarrollo web, ciencia de datos, y más.</p>
+                <img src="python.jpg" alt="Python">
+            </section>
+
+            <section>
+                <h2>Java</h2>
+                <p>Domina los fundamentos de Java, uno de los lenguajes más importantes para desarrollo de aplicaciones empresariales y móviles.</p>
+                <img src="java.png" alt="Java">
+            </section>
+
+            <section>
+                <h2>C/C++</h2>
+                <p>Adquiere habilidades en C y C++, lenguajes clave para desarrollo de software de sistemas, videojuegos y aplicaciones de alto rendimiento.</p>
+                <img src="c.jpg" alt="C/C++">
+            </section>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Escuela Online de Ciencias Exactas &copy; 2024 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
